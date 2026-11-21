@@ -44,12 +44,5 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "camera=(), microphone=(), geolocation=()"
 
-[[headers]]
-  for = "/*.css"
-  [headers.values]
-    Cache-Control = "public, max-age=3600"
-
-[[headers]]
-  for = "/*.js"
-  [headers.values]
-    Cache-Control = "public, max-age=3600"
+# No custom Cache-Control: Netlify's default makes browsers re-check files on
+# each visit, so updates to styles.css / main.js show up right after a deploy.
