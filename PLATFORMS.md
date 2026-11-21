@@ -89,5 +89,6 @@ Last updated: 2026-11-21 (site launched)
 |---|---|
 | expertoenseo.online | Style reference for layout, blue colors and photo style. Nothing was copied from it. |
 | Unsplash search | Finding the stock photos above. |
+| Google Chrome (on this computer) | Exporting the business card to print-ready PDF and PNG. Card files are in `print/`, kept off GitHub and the website. |
 | Python's built-in web server | Previewing the site on this computer (`python -m http.server 4174`). |
 | Claude Code (Anthropic) | AI assistant that built and tested the site. |
