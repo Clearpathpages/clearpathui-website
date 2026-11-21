@@ -77,8 +77,8 @@ Last updated: 2026-11-21
 - **Used for:** putting the site online at www.clearpathui.com. Every push to `main` on GitHub redeploys the site automatically. Free HTTPS certificate (Let's Encrypt).
 - **Settings in code:** `netlify.toml` (no build step, publish the repo root, security headers, blocks public access to PLATFORMS.md / README.md, `/quote` short link). `404.html` is the not-found page.
 - **Domain setup:** `www.clearpathui.com` is the primary address; `clearpathui.com` redirects to it.
-- **GoDaddy DNS records for Netlify:** `A @ 75.2.60.5` (Netlify load balancer) and `CNAME www <site-name>.netlify.app`.
-- **Netlify site name:** to fill in once created.
+- **GoDaddy DNS records for Netlify:** `A @ 75.2.60.5` (Netlify load balancer) and `CNAME www incredible-clafoutis-375d89.netlify.app`.
+- **Netlify site:** incredible-clafoutis-375d89 (https://incredible-clafoutis-375d89.netlify.app), owned by your Netlify account (GitHub login), deploys from `main`. First deploy 2026-11-21.
 
 ## Used during design only (not part of the live site)
 
