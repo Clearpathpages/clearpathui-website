@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page Not Found | ClearpathUI</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#2158e8">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Instrument+Serif:ital@1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <style>
+    .nf { min-height: calc(100vh - 72px); display: grid; place-items: center; text-align: center; padding: 48px 16px; }
+    .nf-code { font: 700 clamp(4.5rem, 14vw, 8rem)/1 var(--font-display); color: var(--brand); letter-spacing: -0.04em; margin-bottom: 8px; }
+    .nf p { color: var(--ink-soft); font-size: 1.1rem; max-width: 460px; margin: 0 auto 28px; }
+    .nf-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main">
+      <a class="logo" href="/" aria-label="ClearpathUI home">
+        <img class="logo-mark" src="/favicon.svg" alt="" width="34" height="34">
+        <span class="logo-text">Clearpath<span>UI</span></span>
+      </a>
+    </nav>
+  </header>
+  <main class="nf">
+    <div>
+      <div class="nf-code">404</div>
+      <h1>This page took a <em>wrong turn</em></h1>
+      <p>The page you're looking for doesn't exist or has moved. Let's get you back on a clear path.</p>
+      <div class="nf-actions">
+        <a class="btn btn-primary" href="/">Back to home</a>
+        <a class="btn btn-ghost" href="/quote.html">Get a free quote</a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

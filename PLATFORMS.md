@@ -16,7 +16,7 @@ Last updated: 2026-11-21
 | GoDaddy | Domain name and DNS for clearpathui.com | Your existing plan | Your GoDaddy account | Domain owned; site not connected yet |
 | Microsoft 365 (through GoDaddy) | info@clearpathui.com mailbox | Your existing plan | Your Microsoft 365 / GoDaddy account | Live |
 | GitHub | Stores the website code and its history | Free | Clearpathpages | Private repo, `main` branch |
-| Website hosting | Puts the site online | Not chosen yet | — | To do |
+| Netlify | Hosts the website, deploys automatically from GitHub, free HTTPS | Free (Starter) | Your Netlify account | Setting up 2026-11-21 |
 
 ## Details
 
@@ -57,7 +57,8 @@ Last updated: 2026-11-21
 - **License:** free, open-source fonts.
 
 ### GoDaddy (domain and DNS)
-- **Used for:** owning clearpathui.com and its DNS records.
+- **Used for:** owning clearpathui.com and its DNS records. Nameservers stay at GoDaddy (ns25/ns26.domaincontrol.com).
+- **Before Netlify:** `A @` was "Parked" (GoDaddy parking page) and `CNAME www` pointed to `@`.
 - **On launch day:** change only the website records (`A` and `www`). Leave the email records (`MX`, `TXT`) alone.
 
 ### Microsoft 365 through GoDaddy (email)
@@ -72,8 +73,12 @@ Last updated: 2026-11-21
 - **Not uploaded:** `CLAUDE.md` (local working notes), listed in `.gitignore`.
 - **Note:** a private repo can't use free GitHub Pages hosting. Netlify or similar can host from a private repo.
 
-### Website hosting (not chosen yet)
-- To do. Record the platform, account and plan here once chosen.
+### Netlify (website hosting)
+- **Used for:** putting the site online at www.clearpathui.com. Every push to `main` on GitHub redeploys the site automatically. Free HTTPS certificate (Let's Encrypt).
+- **Settings in code:** `netlify.toml` (no build step, publish the repo root, security headers, blocks public access to PLATFORMS.md / README.md, `/quote` short link). `404.html` is the not-found page.
+- **Domain setup:** `www.clearpathui.com` is the primary address; `clearpathui.com` redirects to it.
+- **GoDaddy DNS records for Netlify:** `A @ 75.2.60.5` (Netlify load balancer) and `CNAME www <site-name>.netlify.app`.
+- **Netlify site name:** to fill in once created.
 
 ## Used during design only (not part of the live site)
 
