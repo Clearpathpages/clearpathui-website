@@ -3,7 +3,7 @@
 Every outside service, tool and content source used to build or run www.clearpathui.com.
 Update this file whenever a platform is added, changed or removed.
 
-Last updated: 2026-11-21
+Last updated: 2026-11-21 (site launched)
 
 ## Summary
 
@@ -13,10 +13,10 @@ Last updated: 2026-11-21
 | Web3Forms | Emails each quote request to info@clearpathui.com | Free | Key created with info@clearpathui.com | Live, verified 2026-11-21 |
 | Unsplash | 7 stock photos | Free (Unsplash License) | None needed | Linked from Unsplash; save local copies before launch |
 | Google Fonts | Website fonts | Free | None needed | Live |
-| GoDaddy | Domain name and DNS for clearpathui.com | Your existing plan | Your GoDaddy account | Domain owned; site not connected yet |
+| GoDaddy | Domain name and DNS for clearpathui.com | Your existing plan | Your GoDaddy account | Points to Netlify (`www` record still to update) |
 | Microsoft 365 (through GoDaddy) | info@clearpathui.com mailbox | Your existing plan | Your Microsoft 365 / GoDaddy account | Live |
 | GitHub | Stores the website code and its history | Free | Clearpathpages | Private repo, `main` branch |
-| Netlify | Hosts the website, deploys automatically from GitHub, free HTTPS | Free (Starter) | Your Netlify account | Setting up 2026-11-21 |
+| Netlify | Hosts the website, deploys automatically from GitHub, free HTTPS | Free (Starter) | Your Netlify account (GitHub login) | Live at https://www.clearpathui.com since 2026-11-21 |
 
 ## Details
 
@@ -76,8 +76,11 @@ Last updated: 2026-11-21
 ### Netlify (website hosting)
 - **Used for:** putting the site online at www.clearpathui.com. Every push to `main` on GitHub redeploys the site automatically. Free HTTPS certificate (Let's Encrypt).
 - **Settings in code:** `netlify.toml` (no build step, publish the repo root, security headers, blocks public access to PLATFORMS.md / README.md, `/quote` short link). `404.html` is the not-found page.
-- **Domain setup:** `www.clearpathui.com` is the primary address; `clearpathui.com` redirects to it.
-- **GoDaddy DNS records for Netlify:** `A @ 75.2.60.5` (Netlify load balancer) and `CNAME www incredible-clafoutis-375d89.netlify.app`.
+- **Domain setup:** `www.clearpathui.com` is the primary address; `clearpathui.com` and all `http://` links redirect to `https://www.clearpathui.com`.
+- **HTTPS:** Let's Encrypt certificate for clearpathui.com and www.clearpathui.com, issued 2026-11-21, renewed automatically by Netlify.
+- **Launch check (2026-11-21):** pages, photos, 404 page, hidden docs and a live quote test (saved to Base44 and emailed via Web3Forms) all passed.
+- **Note:** Netlify shows a small "Powered by Netlify" badge on the site; it comes from Netlify, not the site code.
+- **GoDaddy DNS records for Netlify:** `A @ 75.2.60.5` (Netlify load balancer, done) and `CNAME www incredible-clafoutis-375d89.netlify.app` (to do: as of launch it still points to `@`, which works but isn't Netlify's recommended setup).
 - **Netlify site:** incredible-clafoutis-375d89 (https://incredible-clafoutis-375d89.netlify.app), owned by your Netlify account (GitHub login), deploys from `main`. First deploy 2026-11-21.
 
 ## Used during design only (not part of the live site)
