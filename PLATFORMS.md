@@ -15,6 +15,7 @@ Last updated: 2026-11-21
 | Google Fonts | Website fonts | Free | None needed | Live |
 | GoDaddy | Domain name and DNS for clearpathui.com | Your existing plan | Your GoDaddy account | Domain owned; site not connected yet |
 | Microsoft 365 (through GoDaddy) | info@clearpathui.com mailbox | Your existing plan | Your Microsoft 365 / GoDaddy account | Live |
+| GitHub | Stores the website code and its history | Free | Clearpathpages | Private repo, `main` branch |
 | Website hosting | Puts the site online | Not chosen yet | — | To do |
 
 ## Details
@@ -63,6 +64,13 @@ Last updated: 2026-11-21
 - **Used for:** the info@clearpathui.com mailbox that receives the quote alerts.
 - **Mail server:** `clearpathui-com.mail.protection.outlook.com`
 - **Tip:** if an alert goes missing, check the quarantine at https://security.microsoft.com/quarantine.
+
+### GitHub (code storage)
+- **Used for:** storing the website files and their change history.
+- **Repository:** https://github.com/Clearpathpages/clearpathui-website (private, `main` branch)
+- **Account:** Clearpathpages
+- **Not uploaded:** `CLAUDE.md` (local working notes), listed in `.gitignore`.
+- **Note:** a private repo can't use free GitHub Pages hosting. Netlify or similar can host from a private repo.
 
 ### Website hosting (not chosen yet)
 - To do. Record the platform, account and plan here once chosen.
