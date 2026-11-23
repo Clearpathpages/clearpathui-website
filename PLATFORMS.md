@@ -13,6 +13,7 @@ Last updated: 2026-11-21 (site launched)
 | Web3Forms | Emails each quote request to info@clearpathui.com | Free | Key created with info@clearpathui.com | Live, verified 2026-11-21 |
 | Unsplash | 7 stock photos | Free (Unsplash License) | None needed | Linked from Unsplash; save local copies before launch |
 | Square | Online payments (Make a payment page) | Square's processing fees per payment | Your Square account | Live link added 2026-11-22 |
+| Google Search Console | Gets the site into Google search and shows search performance | Free | Your Google account | Verified 2026-11-22 (domain property) |
 | Google Fonts | Website fonts | Free | None needed | Live |
 | GoDaddy | Domain name and DNS for clearpathui.com | Your existing plan | Your GoDaddy account | Points to Netlify (`www` record still to update) |
 | Microsoft 365 (through GoDaddy) | info@clearpathui.com mailbox | Your existing plan | Your Microsoft 365 / GoDaddy account | Live |
@@ -59,6 +60,13 @@ Last updated: 2026-11-21 (site launched)
 - **Retired:** an earlier test link (`square.link/u/3iP1cghY`) charged a fixed $1.00 and was not used. You can delete it in Square.
 - **Cost:** Square charges a processing fee per payment; see your Square account for current rates.
 
+### Google Search Console (search visibility)
+- **Used for:** telling Google about the site, submitting the sitemap, and seeing which searches show ClearpathUI.
+- **Property:** `clearpathui.com` as a Domain property (covers www, non-www, http and https).
+- **Verification:** TXT record `google-site-verification=...` at GoDaddy, added 2026-11-22. Don't delete it, or Search Console loses access.
+- **Sitemap:** https://www.clearpathui.com/sitemap.xml (also listed in robots.txt).
+- **Google Business Profile:** not used. Google's guidelines require in-person contact with customers, and ClearpathUI is fully remote. Revisit if in-person meetings are ever offered.
+
 ### Google Fonts
 - **Used for:** Bricolage Grotesque (headings), Instrument Serif italic (accent words), Inter (body text).
 - **Where in the code:** font link in the `<head>` of `index.html` and `quote.html`.
@@ -66,6 +74,7 @@ Last updated: 2026-11-21 (site launched)
 
 ### GoDaddy (domain and DNS)
 - **Used for:** owning clearpathui.com and its DNS records. Nameservers stay at GoDaddy (ns25/ns26.domaincontrol.com).
+- **TXT records:** two for Microsoft 365 email (`v=spf1 ...` and `NETORGFT21331223.onmicrosoft.com`) plus Google's `google-site-verification` for Search Console. Never edit the email ones.
 - **Before Netlify:** `A @` was "Parked" (GoDaddy parking page) and `CNAME www` pointed to `@`.
 - **On launch day:** change only the website records (`A` and `www`). Leave the email records (`MX`, `TXT`) alone.
 
