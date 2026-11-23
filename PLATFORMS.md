@@ -12,6 +12,7 @@ Last updated: 2026-11-21 (site launched)
 | Base44 | Stores quote requests (your lead list) | Free | Your Base44 account | Live |
 | Web3Forms | Emails each quote request to info@clearpathui.com | Free | Key created with info@clearpathui.com | Live, verified 2026-11-21 |
 | Unsplash | 7 stock photos | Free (Unsplash License) | None needed | Linked from Unsplash; save local copies before launch |
+| Square | Online payments (Make a payment page) | Square's processing fees per payment | Your Square account | Live link added 2026-11-22 |
 | Google Fonts | Website fonts | Free | None needed | Live |
 | GoDaddy | Domain name and DNS for clearpathui.com | Your existing plan | Your GoDaddy account | Points to Netlify (`www` record still to update) |
 | Microsoft 365 (through GoDaddy) | info@clearpathui.com mailbox | Your existing plan | Your Microsoft 365 / GoDaddy account | Live |
@@ -50,6 +51,13 @@ Last updated: 2026-11-21 (site launched)
 | Home: Basic SEO card | Google Search Console chart | https://images.unsplash.com/photo-1625296276703-3fbc924f07b5 |
 | Home: Why us | Person on a video call with a tablet | https://images.unsplash.com/photo-1612831455359-970e23a1e4e9 |
 | Quote page: sidebar | Business owner working at her laptop | https://images.unsplash.com/photo-1758611974712-4b19a8675d9f |
+
+### Square (online payments)
+- **Used for:** the "Make a payment" page (`pay.html`), linked from every page's footer. Clients enter the amount from their invoice or quote on Square's secure checkout; card details never touch this site.
+- **Payment link:** https://square.link/u/Lofytb1T (customer enters the amount). Checkout shows the business as "ClearpathUI.com".
+- **Where in the code:** `SQUARE_PAYMENT_URL` near the bottom of `pay.html`. The button only accepts square.link / square.site / squareup.com addresses; anything else shows a call-or-email message instead.
+- **Retired:** an earlier test link (`square.link/u/3iP1cghY`) charged a fixed $1.00 and was not used. You can delete it in Square.
+- **Cost:** Square charges a processing fee per payment; see your Square account for current rates.
 
 ### Google Fonts
 - **Used for:** Bricolage Grotesque (headings), Instrument Serif italic (accent words), Inter (body text).

@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Make a Payment | ClearpathUI</title>
+  <meta name="description" content="Pay a ClearpathUI invoice or deposit online through Square's secure checkout.">
+  <link rel="canonical" href="https://www.clearpathui.com/pay.html">
+  <meta name="theme-color" content="#2158e8">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Instrument+Serif:ital@1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <nav class="container nav" aria-label="Main">
+      <a class="logo" href="index.html" aria-label="ClearpathUI home">
+        <img class="logo-mark" src="favicon.svg" alt="" width="42" height="42">
+        <span class="logo-text">Clearpath<span>UI</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#process">How it works</a></li>
+        <li><a href="index.html#why">Why us</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
+        <li><a class="btn btn-primary nav-cta" href="quote.html">Get a quote</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="quote-hero">
+      <div class="container">
+        <span class="eyebrow">Payments</span>
+        <h1>Make a <em>payment</em></h1>
+        <p>Pay an invoice, deposit or balance online. Checkout is handled by Square, so your card details are entered securely on Square's page, never on this site.</p>
+      </div>
+    </section>
+
+    <section class="container quote-layout">
+      <div class="form-card pay-card">
+        <div class="pay-head">
+          <div class="pay-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3 10h18M7 15h4"/></svg>
+          </div>
+          <div>
+            <h2>Pay securely with Square</h2>
+            <p>Have your invoice or quote handy so you know the amount to pay.</p>
+          </div>
+        </div>
+
+        <ol class="pay-steps">
+          <li><b>1</b><span>Click <strong>Pay with Square</strong> below. Square's secure checkout opens in a new tab.</span></li>
+          <li><b>2</b><span>Enter the amount from your invoice or quote, plus your payment details.</span></li>
+          <li><b>3</b><span>Square shows a confirmation and can email you a receipt.</span></li>
+        </ol>
+
+        <a class="btn btn-primary pay-btn" id="pay-btn" href="#" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+          <span>Pay with Square</span>
+        </a>
+        <p class="pay-unavailable" id="pay-unavailable" hidden>Online payments are being set up. To pay now, call <a href="tel:+19544482490">(954) 448-2490</a> or email <a href="mailto:info@clearpathui.com">info@clearpathui.com</a>.</p>
+
+        <div class="secure-note">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.4-8 9-4.6-.6-8-4.5-8-9V6z"/><path d="m9 12 2 2 4-4"/></svg>
+          <span>Secure checkout hosted by Square. ClearpathUI never sees or stores your card number.</span>
+        </div>
+      </div>
+
+      <aside class="aside">
+        <div class="aside-card">
+          <h3>Got an invoice by email?</h3>
+          <p class="aside-text">If Square emailed you an invoice, you can also pay it directly with the <strong>Pay</strong> button in that email.</p>
+        </div>
+        <div class="aside-card dark">
+          <h3>Questions about a payment?</h3>
+          <p>Reach out any time and I'll help.</p>
+          <a class="contact-line" href="mailto:info@clearpathui.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/></svg>
+            info@clearpathui.com
+          </a>
+          <a class="contact-line" href="tel:+19544482490">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
+            (954) 448-2490
+          </a>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="logo" href="index.html" aria-label="ClearpathUI home">
+            <img class="logo-mark" src="favicon.svg" alt="" width="42" height="42">
+            <span class="logo-text">Clearpath<span>UI</span></span>
+          </a>
+          <p>Modern, user-friendly websites for small businesses. Proudly 100% remote.</p>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li><a href="index.html#services">Web design</a></li>
+            <li><a href="index.html#services">Website upgrades</a></li>
+            <li><a href="index.html#services">Google Business Profile</a></li>
+            <li><a href="index.html#services">Basic SEO</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:info@clearpathui.com">info@clearpathui.com</a></li>
+            <li><a href="tel:+19544482490">(954) 448-2490</a></li>
+            <li><a href="quote.html">Get a quote</a></li>
+            <li><a href="pay.html" aria-current="page">Make a payment</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span class="year">2026</span> ClearpathUI. All rights reserved.</span>
+        <span>www.clearpathui.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Your Square payment link (Square Dashboard > Payment links). Only links on
+    // square.link or square.site are accepted; anything else hides the button.
+    var SQUARE_PAYMENT_URL = 'https://square.link/u/Lofytb1T';
+    (function () {
+      var btn = document.getElementById('pay-btn');
+      var fallback = document.getElementById('pay-unavailable');
+      var ok = /^https:\/\/([a-z0-9-]+\.)*(square\.link|square\.site|squareup\.com)\//i.test(SQUARE_PAYMENT_URL);
+      if (ok) { btn.href = SQUARE_PAYMENT_URL; }
+      else { btn.hidden = true; fallback.hidden = false; }
+    })();
+  </script>
+  <script src="main.js"></script>
+</body>
+</html>

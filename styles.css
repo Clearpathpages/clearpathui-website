@@ -402,6 +402,23 @@ input:focus, select:focus, textarea:focus { outline: none; border-color: var(--b
 .aside-photo img { width: 100%; height: 100%; object-fit: cover; }
 .aside-card.dark { background: var(--navy); border-color: var(--navy); }
 
+/* ---------- Payment page ---------- */
+.pay-head { display: flex; gap: 18px; align-items: flex-start; margin-bottom: 26px; }
+.pay-head h2 { font-size: 1.45rem; margin-bottom: 6px; }
+.pay-head p { color: var(--ink-soft); margin: 0; }
+.pay-icon { width: 52px; height: 52px; border-radius: 14px; background: var(--brand-soft); color: var(--brand); display: grid; place-items: center; flex: none; }
+.pay-icon svg { width: 26px; height: 26px; }
+.pay-steps { list-style: none; padding: 0; margin: 0 0 28px; display: grid; gap: 14px; }
+.pay-steps li { display: flex; gap: 14px; align-items: flex-start; color: var(--ink-soft); }
+.pay-steps b { width: 28px; height: 28px; border-radius: 50%; background: var(--brand-soft); color: var(--brand); font-size: .85rem; display: grid; place-items: center; flex: none; margin-top: 1px; }
+.pay-steps strong { color: var(--ink); }
+.pay-btn { width: 100%; padding: 17px 24px; font-size: 1.05rem; }
+.pay-btn[hidden] { display: none; }
+.pay-unavailable { margin: 0; padding: 14px 16px; border-radius: 12px; background: var(--surface-2); color: var(--ink-soft); }
+.secure-note { display: flex; gap: 10px; align-items: flex-start; margin-top: 18px; color: var(--muted); font-size: .9rem; }
+.secure-note svg { width: 20px; height: 20px; color: #16a34a; flex: none; margin-top: 1px; }
+.aside-text { color: var(--ink-soft); font-size: .94rem; margin: 0; }
+
 /* ---------- Responsive ---------- */
 @media (max-width: 1024px) {
   .steps { grid-template-columns: repeat(2, 1fr); }
