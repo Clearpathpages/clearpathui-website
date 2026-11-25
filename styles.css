@@ -237,6 +237,7 @@ h1 em, h2 em {
 .step p { color: rgba(255, 255, 255, .72); font-size: .96rem; margin: 0; }
 
 /* Why */
+#why { padding-bottom: clamp(32px, 4vw, 48px); } /* FAQ follows directly, so keep this gap tight */
 .why-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 56px; align-items: start; }
 .why-list { display: grid; gap: 18px; }
 .why-item { display: flex; gap: 18px; padding: 22px; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--line); }
