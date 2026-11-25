@@ -11,7 +11,7 @@ Last updated: 2026-11-21 (site launched)
 |---|---|---|---|---|
 | Base44 | Stores quote requests (your lead list) | Free | Your Base44 account | Live |
 | Web3Forms | Emails each quote request to info@clearpathui.com | Free | Key created with info@clearpathui.com | Live, verified 2026-11-21 |
-| Unsplash | 7 stock photos | Free (Unsplash License) | None needed | Linked from Unsplash; save local copies before launch |
+| Unsplash | 7 stock photos | Free (Unsplash License) | None needed | Hosted on the site in `images/` (WebP) since 2026-11-25 |
 | Square | Online payments (Make a payment page) | Square's processing fees per payment | Your Square account | Live link added 2026-11-22 |
 | Google Search Console | Gets the site into Google search and shows search performance | Free | Your Google account | Verified 2026-11-22 (domain property) |
 | Google Fonts | Website fonts | Free | None needed | Live |
@@ -41,9 +41,9 @@ Last updated: 2026-11-21 (site launched)
 ### Unsplash (stock photos)
 - **Used for:** all photos on the site.
 - **License:** Unsplash License: free for commercial use, credit not required.
-- **Currently:** loaded directly from Unsplash's servers. Download and save local copies in the site folder before launch.
+- **Hosting:** downloaded 2026-11-25 and served from the site's own `images/` folder as compressed WebP files (about 530 KB total). The table's image links show where each photo came from.
 
-| Where on site | Photo | Image link |
+| Where on site | Photo | Original Unsplash image |
 |---|---|---|
 | Home: hero | Smiling small-business owner at her laptop | https://images.unsplash.com/photo-1753164597612-5e71b83fda91 |
 | Home: Web design card | Website and mobile layouts on a large monitor | https://images.unsplash.com/photo-1541462608143-67571c6738dd |
@@ -66,6 +66,10 @@ Last updated: 2026-11-21 (site launched)
 - **Verification:** TXT record `google-site-verification=...` at GoDaddy, added 2026-11-22. Don't delete it, or Search Console loses access.
 - **Sitemap:** https://www.clearpathui.com/sitemap.xml (also listed in robots.txt).
 - **Google Business Profile:** not used. Google's guidelines require in-person contact with customers, and ClearpathUI is fully remote. Revisit if in-person meetings are ever offered.
+
+### Site images made for SEO (no outside platform)
+- `og-image.png` (1200 x 630): preview image shown when the site is shared on social media or in messages. Source: `print/og-image.html`.
+- `logo.png` (512 x 512): logo for Google's business data (structured data on the home page).
 
 ### Google Fonts
 - **Used for:** Bricolage Grotesque (headings), Instrument Serif italic (accent words), Inter (body text).

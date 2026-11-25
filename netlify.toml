@@ -30,11 +30,7 @@
   status = 404
   force = true
 
-# Friendly short link to the quote page.
-[[redirects]]
-  from = "/quote"
-  to = "/quote.html"
-  status = 301
+# /quote and /pay work through Netlify's clean URLs; pages use them as canonical addresses.
 
 [[headers]]
   for = "/*"
