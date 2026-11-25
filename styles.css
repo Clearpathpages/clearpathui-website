@@ -121,7 +121,7 @@ section[id] { scroll-margin-top: 84px; }
 .menu-toggle svg { width: 22px; height: 22px; }
 
 /* Hero */
-.hero { position: relative; padding: clamp(56px, 8vw, 96px) 0 clamp(64px, 8vw, 104px); overflow: hidden; }
+.hero { position: relative; padding: clamp(36px, 4vw, 48px) 0 clamp(64px, 8vw, 104px); overflow: hidden; }
 .hero::before {
   content: ""; position: absolute; inset: -20% -10% auto auto; width: 720px; height: 720px;
   background: radial-gradient(closest-side, rgba(var(--brand-rgb), .13), transparent 70%);
